@@ -3,7 +3,7 @@
 A new Flutter project, after cut alot of mounti, now i get up to work
 
 
-## 🎨 ## 🎨  OnBoarding Screen
+## 🎨 OnBoarding Screen
 - added images & svgs folder for assets
 - added flutter_svg & flutter_screenutil
 - made afile for doc app client
