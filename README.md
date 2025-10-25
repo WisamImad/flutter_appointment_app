@@ -7,7 +7,8 @@
 - Added Splash Screen for IOS & Andriod
 - Using flutter_native_splash
 - Android 12 ablow, created screen 640/640 circle 320 into frame 960/960 becase accepted and show splash on android 12 ablow
-- IOS Splash Screen    &&      Android Splash screen
+- IOS Splash Screen && Android Splash screen
+  
   <img width="270" height="600" alt="Splash Screen ios" src="https://github.com/user-attachments/assets/8dbebdfb-c526-436c-b828-8352a7429549" />
   <img width="270" height="600" alt="Splash Screen android" src="https://github.com/user-attachments/assets/24095fa2-8b12-4a4c-9035-ca9308aba05b" />
 
@@ -20,6 +21,7 @@
 - added colors & text styles
 - added empty login screen
 - added on boarding screen
+  
   <img width="270" height="600" alt="Screenshot_20251023_124333" src="https://github.com/user-attachments/assets/0355c1de-8d08-418a-991f-fd64e120c774" />
 
 
