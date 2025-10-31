@@ -14,7 +14,8 @@ class AppTextFormField extends StatelessWidget {
   final String hintText;
   final bool? obscureText;
   final Widget? suffixIcon;
-
+  final TextEditingController? controller;
+  final Function(String?) validator;
   const AppTextFormField({
     super.key,
     this.contentPadding,
@@ -25,28 +26,28 @@ class AppTextFormField extends StatelessWidget {
     required this.hintText,
     this.obscureText,
     this.suffixIcon, this.fillColor,
+    this.controller,
+    required this.validator,
   });
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      controller: controller,
+      validator: (value) => validator(value),
       decoration: InputDecoration(
         isDense: true,
         contentPadding:
             contentPadding ??
             EdgeInsets.symmetric(vertical: 18.0.h, horizontal: 20.0.w),
-        focusedBorder:
-            focusedBorder ??
-            OutlineInputBorder(
+        focusedBorder: focusedBorder ?? OutlineInputBorder(
               borderRadius: BorderRadius.circular(16.0.r),
               borderSide: const BorderSide(
                 color: ColorsManager.mainBlue,
                 width: 1.3,
               ),
             ),
-        enabledBorder:
-            enabledBorder ??
-            OutlineInputBorder(
+        enabledBorder: enabledBorder ?? OutlineInputBorder(
               // r is for radius responsive using flutter_screenutil package
               borderRadius: BorderRadius.circular(16.0.r),
               borderSide: const BorderSide(
@@ -54,6 +55,20 @@ class AppTextFormField extends StatelessWidget {
                 width: 1.0,
               ),
             ),
+        errorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(16.0.r),
+          borderSide: const BorderSide(
+            color: Colors.red,
+            width: 1.3,
+          ),
+        ),
+        focusedErrorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(16.0.r),
+          borderSide: const BorderSide(
+            color: Colors.red,
+            width: 1.3,
+          ),
+        ),
         hintText: hintText,
         hintStyle: hintStyle ?? TextStyles.font14LightGrayRegular,
         suffixIcon: suffixIcon,
