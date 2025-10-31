@@ -44,7 +44,11 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^5.0.0  # State Management
+  # A build system for Dart code generation and modular compilation.
+  build_runner: ^2.10.1
+  # Lint rules for Flutter apps
+  flutter_lints: ^5.0.0
+  # State Management
   flutter_bloc: ^9.1.1
   # Code generation (mainly used with cubit & retrofit)
   freezed: ^3.2.3
