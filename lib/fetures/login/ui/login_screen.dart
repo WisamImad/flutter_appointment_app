@@ -2,7 +2,7 @@ import 'package:appointment_app/core/helpers/spacing.dart';
 import 'package:appointment_app/core/theming/styles.dart';
 import 'package:appointment_app/core/widgets/app_text_button.dart';
 import 'package:appointment_app/fetures/login/data/models/login_request_body.dart';
-import 'package:appointment_app/fetures/login/ui/widgets/already_have_an_account_text.dart';
+import 'package:appointment_app/fetures/login/ui/widgets/dont_have_an_account_text.dart';
 import 'package:appointment_app/fetures/login/ui/widgets/email_and_password.dart';
 import 'package:appointment_app/fetures/login/ui/widgets/login_bloc_listener.dart';
 import 'package:appointment_app/fetures/login/ui/widgets/terms_and_conditions_text.dart';
@@ -53,7 +53,7 @@ class LoginScreen extends StatelessWidget {
                     verticalSpace(16),
                     const TermsAndConditionsText(),
                     verticalSpace(60),
-                    const AlreadyHaveAnAccountText(),
+                    const DontHaveAnAccountText(),
                     LoginBlocListener(),
                   ],
                 ),
@@ -67,10 +67,7 @@ class LoginScreen extends StatelessWidget {
 
   void ValidateThenDoLogin(BuildContext context) {
     if(context.read<LoginCubit>().formKey.currentState!.validate()){
-      context.read<LoginCubit>().emitLoginState(LoginRequestBody(
-        email: context.read<LoginCubit>().emailController.text,
-        password: context.read<LoginCubit>().passwordController.text,
-      ));
+      context.read<LoginCubit>().emitLoginState();
     }
   }
 }

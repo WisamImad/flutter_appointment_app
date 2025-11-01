@@ -29,7 +29,8 @@ It allows patients to find doctors based on specialty, location, and rating, and
 
 1. ❤️ Splash Screen ✅
 2. ❤️ OnBoarding Screen ✅
-3. ❤️ Login Screen Design ✅
+3. ❤️ Login Screen ✅
+4. ❤️ Sign up Screen ✅
 
 ## 🎨 Splash Screen
 - Added Splash Screen for IOS & Andriod
@@ -92,3 +93,10 @@ It allows patients to find doctors based on specialty, location, and rating, and
 ## 📱 UI Screens
 
 <img width="270" height="600" alt="Screenshot_20251031_152258" src="https://github.com/user-attachments/assets/4d9cb9b1-7ba2-4c9e-ac2b-8418bd358982" />
+
+## 🎨 Sign Up Screen
+- Using Same code Login Screen.
+- Added isPhoneNumberValid in AppRegex.
+- Change registerLazySingleton to registerFactory in dependency_injection becase when navigater between screen hapnded errror, this create every call.
+
+<img width="270" height="600" alt="Screenshot_20251101_104402" src="https://github.com/user-attachments/assets/b97b8988-09bf-426d-b08e-13ea8e8e4b8d" />

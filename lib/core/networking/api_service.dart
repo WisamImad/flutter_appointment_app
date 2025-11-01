@@ -3,6 +3,8 @@ import 'package:dio/dio.dart';
 import 'package:retrofit/retrofit.dart';
 import '../../fetures/login/data/models/login_request_body.dart';
 import '../../fetures/login/data/models/login_response.dart';
+import '../../fetures/sign_up/data/models/sign_up_request_body.dart';
+import '../../fetures/sign_up/data/models/sign_up_response.dart';
 import 'api_constants.dart';
 part 'api_service.g.dart';
 
@@ -19,5 +21,11 @@ abstract class ApiService {
   // login method takes a LoginRequestBody and returns a Future of LoginResponse
   Future<LoginResponse> login(
       @Body() LoginRequestBody loginRequestBody,
+      );
+  // POST request for signup endpoint
+  @POST(ApiConstants.signup)
+  // signup method takes a SignupRequestBody and returns a Future of SignupResponse
+  Future<SignupResponse> signup(
+      @Body() SignupRequestBody signupRequestBody,
       );
 }
