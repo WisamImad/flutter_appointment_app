@@ -139,3 +139,7 @@ To run the development version: flutter run --flavor -t development lib/main_dev
 To run the production version: flutter run --flavor -t production lib/main_production.dart
 
 How to Implement Flavors in Flutter for IOS? I cant test it becase I dont have mac
+
+## 📱 App Flutter Flavors
+
+<img width="270" height="600" alt="Screenshot_20251101_144715" src="https://github.com/user-attachments/assets/a302fe59-7c6c-4ef0-96bb-2291920eafb4" />
