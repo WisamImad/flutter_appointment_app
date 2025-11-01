@@ -38,8 +38,7 @@ class _SignupFormState extends State<SignupForm> {
       setState(() {
         hasLowercase = AppRegex.hasLowercase(passwordController.text);
         hasUppercase = AppRegex.hasUppercase(passwordController.text);
-        hasSpecialCharacters =
-            AppRegex.hasSpecialCharacter(passwordController.text);
+        hasSpecialCharacters = AppRegex.hasSpecialCharacter(passwordController.text);
         hasNumber = AppRegex.hasNumber(passwordController.text);
         hasMinLength = AppRegex.hasMinLength(passwordController.text);
       });
