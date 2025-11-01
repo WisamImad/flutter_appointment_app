@@ -31,6 +31,7 @@ It allows patients to find doctors based on specialty, location, and rating, and
 2. ❤️ OnBoarding Screen ✅
 3. ❤️ Login Screen ✅
 4. ❤️ Sign up Screen ✅
+5. ❤️ Implement Flutter Flavors 🍃 ✅
 
 ## 🎨 Splash Screen
 - Added Splash Screen for IOS & Andriod
@@ -100,3 +101,45 @@ It allows patients to find doctors based on specialty, location, and rating, and
 - Change registerLazySingleton to registerFactory in dependency_injection becase when navigater between screen hapnded errror, this create every call.
 
 <img width="270" height="600" alt="Screenshot_20251101_104402" src="https://github.com/user-attachments/assets/b97b8988-09bf-426d-b08e-13ea8e8e4b8d" />
+
+## 🍃 Flutter Flavors
+What are Flavors? 
+
+They are a way in Flutter to create multiple versions (configurations) of the same application—for example:
+
+1️⃣ Development version (for developers—contains logs and testing data)
+
+2️⃣ Staging version (for testing before release) X Iam not using it now
+
+3️⃣ Production version (the final version uploaded to the store)
+
+How to Implement Flavors in Flutter for Android?
+
+Set up Flutter Flavors for your app so you have two versions:
+
+🧩 Development → For testing.
+
+🚀 Production → For the final version.
+
+- Created 2 files in the root folder lib
+  
+   1- main_development.dart
+  
+   2- main_production.dart
+  
+- Created 2 build types in android/app/build.gradle then after flavorDimensions
+  
+  1- dev
+  2- prod
+
+From the Terminal:
+
+To run the development version: flutter run --flavor -t development lib/main_development.dart
+
+To run the production version: flutter run --flavor -t production lib/main_production.dart
+
+How to Implement Flavors in Flutter for IOS? I cant test it becase I dont have mac
+
+## 📱 App Flutter Flavors
+
+<img width="270" height="600" alt="Screenshot_20251101_144715" src="https://github.com/user-attachments/assets/a302fe59-7c6c-4ef0-96bb-2291920eafb4" />
