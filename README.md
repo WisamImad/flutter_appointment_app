@@ -134,9 +134,9 @@ Set up Flutter Flavors for your app so you have two versions:
 
 From the Terminal:
 
-To run the development version: flutter run --flavor -t development lib/main_development.dart
+To run the development version: flutter run --flavor development -t lib/main_development.dart
 
-To run the production version: flutter run --flavor -t production lib/main_production.dart
+To run the production version: flutter run --flavor production -t lib/main_production.dart
 
 How to Implement Flavors in Flutter for IOS? I cant test it becase I dont have mac
 
@@ -144,4 +144,22 @@ How to Implement Flavors in Flutter for IOS? I cant test it becase I dont have m
 
 <img width="270" height="600" alt="Screenshot_20251101_144715" src="https://github.com/user-attachments/assets/a302fe59-7c6c-4ef0-96bb-2291920eafb4" />
 
-## 🍂 Flutter Firebase & 🛬 Flutter Fastlane
+## 🍂 Flutter Firebase
+- Added Firebase to the project for analytics and crash reporting.
+  1. Created a Firebase project in the Firebase console.
+  2. run 'firebase login' in terminal to login to your Firebase account.
+  3. then run 'dart pub global activate flutterfire_cli' to install the FlutterFire CLI.
+  4. run 'flutterfire configure' in the root of your Flutter project to generate the firebase_options.dart file.
+refer to: https://firebase.google.com/docs/flutter/setup?platform=ios
+
+
+## 🛬 Flutter Fastlane
++ Added Fastlane to automate the build and release process for Android.
+  1. cd android run 'fastlane init' in the android folder to set up Fastlane for your project.
+  2. Install the Firebase App Distribution plugin: run 'fastlane add_plugin firebase_app_distribution'.
+  3. run 'firebase login:ci' to generate a CI token for Firebase App Distribution.
+  4. Edit the Fastfile to add lanes for building and distributing the app.
+  5. every upload new version you must change version from pubspec.yaml file then run 'flutter pub get' to update the version in the android build.gradle file.
+  6. finally run 'fastlane android firebase_distribution' to build and distribute the app to testers.
+
+refer to: https://docs.fastlane.tools/getting-started/android/setup/
