@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1009513273571",
+    "project_id": "app-distribution-flutter",
+    "storage_bucket": "app-distribution-flutter.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1009513273571:android:b0f72a8196e618f1500dd6",
+        "android_client_info": {
+          "package_name": "com.appointment_app.appointment_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtc0_7H4DD-fQS_N0-ZFqVST97z3DYBsw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1009513273571:android:8e8797234b73a9ef500dd6",
+        "android_client_info": {
+          "package_name": "com.appointment_app.appointment_app.dev"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtc0_7H4DD-fQS_N0-ZFqVST97z3DYBsw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

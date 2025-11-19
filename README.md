@@ -163,3 +163,10 @@ refer to: https://firebase.google.com/docs/flutter/setup?platform=ios
   6. finally run 'fastlane android firebase_distribution' to build and distribute the app to testers.
 
 refer to: https://docs.fastlane.tools/getting-started/android/setup/
+
+## 📱 App Flutter Firebase Development 🍂
+- Created 2 Firebase projects:
+  1. DocDoc-Development - add now this branch.
+  2. DocDoc-Production - already created before.
+- Added google-services.json for android/app/src/development folders.
+- Configured Firebase in main_development.dart files.
