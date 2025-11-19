@@ -45,7 +45,6 @@ android {
             dimension = "default"
             applicationIdSuffix = ".dev"
             resValue("string", "app_name", "DocDoc Development")
-            versionNameSuffix = "-dev"
         }
     }
 
